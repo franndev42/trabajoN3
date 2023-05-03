@@ -27,6 +27,7 @@ html {
   background-color: #dd6106;
 }
 
+  
 @media screen and (max-width: 768px){
   .menu{
     background-color: #000;
@@ -37,9 +38,10 @@ html {
   position: absolute;
   left: 0;
   top: 0;
-  // display: none;
+  display: none;
   }
-  .navbar , .fa-solid{
+  .navbar , .fa-solid, .show-menu{
     display: block;
   }
+
 }

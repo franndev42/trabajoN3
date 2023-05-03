@@ -46,8 +46,9 @@ html {
     height: 100vh;
     position: absolute;
     left: 0;
-    top: 0; }
-  .navbar, .fa-solid {
+    top: 0;
+    display: none; }
+  .navbar, .fa-solid, .show-menu {
     display: block; } }
 
 a {
@@ -60,17 +61,18 @@ header .wrapper {
 
 header .home {
   background-image: url(/img/cementerio-spantapajaro.png);
-  background-size: cover; }
+  background-size: cover;
+  color: #000000; }
 
 header .navbar {
   justify-content: space-between;
   padding: 2em; }
 
-header .navbar__brand {
-  color: #fff; }
+header .navbar__brandd {
+  color: #ffffff; }
 
-header .navbar__brand--span {
-  color: #dd6106; }
+header .navbar__brand--spann {
+  color: #d45d08; }
 
 header ul .menu__link {
   list-style: none;
@@ -89,12 +91,24 @@ header .content-info {
   height: 60vh;
   align-items: center;
   flex-direction: column; }
-  header .content-info .content-info_subtittle {
-    font-size: clamp(1em, 5vw, 2em);
-    color: #fff2f2; }
-  header .content-info .content-info_tittle {
-    font-size: clamp(3em, 10vw, 5em);
-    color: #fff2f2; }
+  header .content-info .content-info_subtittlee {
+    font-size: clamp(1em, 5vw, 2em); }
+  header .content-info .content-info_tittlee {
+    font-size: clamp(3em, 10vw, 5em); }
+
+@media screen and (max-width: 768px) {
+  .menu {
+    background-color: #000;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 3em;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none; }
+  .navbar, .fa-solid, .show-menu {
+    display: block; } }
 
 a {
   text-decoration: none; }
@@ -108,14 +122,15 @@ header .story {
   background-image: url(../../img/cementerio-naranja.png);
   background-size: cover; }
 
-header .navbar {
+header .navbarrr {
   justify-content: space-between;
-  padding: 2em; }
-
-header .navbar__brand {
+  padding: 2em;
   color: #fff; }
 
-header .navbar__brand--span {
+header .navbar__brandd {
+  color: #ffffff; }
+
+header .navbar__brand--span-story {
   color: #dd6106; }
 
 header ul .menu__link {
@@ -214,3 +229,67 @@ header .content-info {
   .footer .footer-info {
     background-color: #dd6106;
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif; }
+
+.blog {
+  background-image: url(../../img/blogg.jpg);
+  color: #dd6106;
+  text-align: center; }
+  .blog .navbar_brand {
+    color: #dd6106; }
+
+.footer-blog, .card-blog {
+  background-color: #000;
+  color: #fff;
+  padding-bottom: 35px; }
+
+.blog-content-tittle {
+  color: #dd6106;
+  background: #000;
+  padding-bottom: 75px; }
+
+a {
+  text-decoration: none; }
+
+/*header*/
+header .wrapper {
+  height: 100vh;
+  width: 100vw; }
+
+header .contact {
+  background-image: url(/./img/lunass.jpg);
+  background-size: cover;
+  color: #dd6106; }
+
+header .navbar {
+  justify-content: space-between;
+  padding: 2em; }
+
+header .navbar__brand {
+  color: #ffffff; }
+
+header .navbar__brand--span {
+  color: #81644e; }
+
+header ul .menu__link {
+  list-style: none;
+  margin: 2em; }
+  header ul .menu__link .menu__item {
+    color: #ffffff;
+    font-size: 1.2em; }
+
+header .navbar .fa-solid {
+  color: #000000;
+  font-size: 2em;
+  display: none; }
+
+header .content-info {
+  width: 100vw;
+  height: 60vh;
+  align-items: center;
+  flex-direction: column; }
+  header .content-info .content-info_subtittle {
+    font-size: clamp(1em, 5vw, 2em);
+    color: #fff2f2; }
+  header .content-info .content-info_tittle {
+    font-size: clamp(3em, 10vw, 5em);
+    color: #fff2f2; }
